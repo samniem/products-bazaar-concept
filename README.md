@@ -20,6 +20,9 @@ For the design files please see designPlan folder in the project structure hiera
   - 5. ProductsTable: A table for a specific produt category
   - 6. ProductsTableHeader: Header for the product category
   - 7. ProductsTableRow: Contains one product belonging to a specific product category
+  
+## Static implementation
+![StaticImplementation](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/Static%20Site%20Implementation.png)
 
 ## Available Scripts
 
