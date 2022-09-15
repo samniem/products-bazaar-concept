@@ -1,5 +1,10 @@
 # Products Bazaar Concept
 
+This is a simple React and Adobe XD project. In this project we have implemented the thinking in React principles.
+The design of the site is similar to the search bar example provided in the [React documentation](https://reactjs.org/docs/thinking-in-react.html) but runs as a full site
+and the design has been done by hand.
+
+For the design files please see designPlan folder in the project structure hierarchy.
 
 ## Design Of The Site
 ![Design](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Products%20Bazaar%203.png)
