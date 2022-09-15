@@ -1,6 +1,9 @@
 import './App.css';
+import { ProductsHeader } from './components/productsHeader'
+import { SearchBar } from './components/searchBar'
+import { ProductsGridContainer } from './components/ProductsGridContainer';
 
-const data = [
+const products = [
   {category: "Electronics", name: "Air Pod", price: "$299", stock: "20"},
   {category: "Electronics", name: "Mac Book Pro", price: "$2999", stock: "6"},
   {category: "Electronics", name: "Mac Book Air", price: "$1299", stock: "0"},
@@ -9,7 +12,7 @@ const data = [
   {category: "Drink", name: "Pepsi Max", price: "$1.4", stock: "6"},
   {category: "Drink", name: "Apple juice", price: "$2", stock: "3"},
   {category: "Drink", name: "Mineral water", price: "$2.3", stock: "0"},
-  {category: "Snack", name: "Candy", price: "$3", stock: "200"},
+  {category: "Snack", name: "Fruit Candy", price: "$3", stock: "200"},
   {category: "Snack", name: "Lollipop", price: "$1", stock: "60"},
   {category: "Snack", name: "Carrot", price: "$1.5", stock: "30"},
   {category: "Snack", name: "Banana", price: "$1.3", stock: "120"},
@@ -23,8 +26,9 @@ const data = [
 function App() {
   return (
     <div className="App">
-      <h1>Products Bazaar</h1>
-
+      <ProductsHeader />
+      <SearchBar />
+      <ProductsGridContainer products={products}/>
     </div>
   );
 }
