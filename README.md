@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Products Bazaar Concept
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Design Of The Site
+[Design](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Products%20Bazaar%203.png)
+[]()
+
+## Hierarchy Breakdown
+[HierarchyBreakdown](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Hierarchy.jpg)
+
+- 1. Header: Contains Site Header
+- 2. SearchBar: Contains all of the input from user
+- 3. ProductsGridContainer: Grid contanining all of the product tables
+  - 4. ProductsHeader: Header for what information product rows contain
+  - 5. ProductsTable: A table for a specific produt category
+  - 6. ProductsTableHeader: Header for the product category
+  - 7. ProductsTableRow: Contains one product belonging to a specific product category
 
 ## Available Scripts
 
