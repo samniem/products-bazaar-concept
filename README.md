@@ -2,11 +2,11 @@
 
 
 ## Design Of The Site
-[Design](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Products%20Bazaar%203.png)
+![Design](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Products%20Bazaar%203.png)
 []()
 
 ## Hierarchy Breakdown
-[HierarchyBreakdown](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Hierarchy.jpg)
+![HierarchyBreakdown](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Hierarchy.jpg)
 
 - 1. Header: Contains Site Header
 - 2. SearchBar: Contains all of the input from user
