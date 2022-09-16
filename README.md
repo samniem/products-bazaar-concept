@@ -6,7 +6,7 @@ and the design has been done by hand.
 
 For the design files please see designPlan folder in the project structure hierarchy.
 
-## Design Of The Site
+## 1. Design Of The Site
 ![Design](https://github.com/samniem/products-bazaar-concept/blob/main/designPlan/Products%20Bazaar%203.png)
 []()
 
@@ -21,10 +21,10 @@ For the design files please see designPlan folder in the project structure hiera
     - 6. ProductsTableHeader: Header for the product category
     - 7. ProductsTableRow: Contains one product belonging to a specific product category
   
-## Static implementation
+## 2. Static implementation
 ![StaticImplementation](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/Static%20Site%20Implementation.png)
 
-## Minimal state
+## 3. Minimal state
 
 Since we have two types of inputs from the user, the minimal state representation has two stateful variables.
 The first is the `searchTerm` state, where the user can input text as a search term.
@@ -33,7 +33,7 @@ The second is the `onlyInStockProducts` state where the user sets the UI to rend
 As a note if we had a backend service that was returning the JSON data for products, then we would need a third state.
 In this case the product information would be variable but right now we have a constant set of products so we do not need to use a state for the products. 
 
-## Determine where the state should live
+## 4. Determine where the state should live
 
 We start by mapping out every component that will render something based on the state of the application. 
 
@@ -66,7 +66,14 @@ This implementation follows this best practice recommendation by React documenta
 ![State3](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/state3.png)
 ![State4](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/state4.png)
 
+## 5. Inverse Data Flow
 
+Lastly, we add inverse dataflow from the SearchBar component towards the App component. We need the inverse dataflow so the user intention will be forwarded by the state component to the tables.
+With the inverse dataflow we pass the changeInStockOnly and updateSearchTerm methods to the SearchBar as props. Then, SearchBarn performs a callback on these methods when the user interacts with the UI.
+The code implementation is provided in the two screenshots below. 
+
+![Callback1](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/callback1.png)
+![Callback2](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/callback2.png)
 
 ## Available Scripts
 

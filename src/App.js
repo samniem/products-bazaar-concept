@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <ProductsHeader />
-      <SearchBar onlyInStock={onlyInStock} searchTerm={searchTerm}/>
+      <SearchBar changeOnlyInStock={changeOnlyInStock} onlyInStock={onlyInStock} searchTerm={searchTerm} updateSearchTerm={updateSearchTerm}/>
       <ProductsGridContainer onlyInStock={onlyInStock} products={products} searchTerm={searchTerm}/>
     </div>
   );
