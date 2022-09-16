@@ -42,10 +42,10 @@ We start by mapping out every component that will render something based on the 
 Then for choosing the commmon component for the state [React documentation](https://reactjs.org/docs/thinking-in-react.html) offers the following criteria for selecting the common state component:
 
 
->Identify every component that renders something based on that state.
->Find a common owner component (a single component above all the components that need the state in the hierarchy).
->Either the common owner or another component higher up in the hierarchy should own the state.
->If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+>-Identify every component that renders something based on that state.
+>-Find a common owner component (a single component above all the components that need the state in the hierarchy).
+>-Either the common owner or another component higher up in the hierarchy should own the state.
+>-If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Based on the mapping we drew above and React documentation instructions we should place the state in the div component inside App.js where the other components are housed. 
 
