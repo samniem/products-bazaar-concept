@@ -2,6 +2,7 @@ import './App.css';
 import { ProductsHeader } from './components/productsHeader'
 import { SearchBar } from './components/searchBar'
 import { ProductsGridContainer } from './components/productsGridContainer';
+import { useState } from 'react'
 
 const products = [
   {category: "Electronics", name: "Air Pod", price: "$299", stock: "20"},
@@ -24,11 +25,14 @@ const products = [
 ]
 
 function App() {
+  const [searchTerm, updateSearchTerm] = useState('')
+  const [onlyInStock, changeOnlyInStock] = useState(false)
+
   return (
     <div className="App">
       <ProductsHeader />
-      <SearchBar />
-      <ProductsGridContainer products={products}/>
+      <SearchBar onlyInStock={onlyInStock} searchTerm={searchTerm}/>
+      <ProductsGridContainer onlyInStock={onlyInStock} products={products} searchTerm={searchTerm}/>
     </div>
   );
 }

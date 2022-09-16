@@ -51,6 +51,22 @@ Based on the mapping we drew above and React documentation instructions we shoul
 
 ![CommonStateComponent2](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/CommonStateComponent2.jpg)
 
+### What the state and state using code should look like right now
+
+Notice that the states are located in the App.js component and have been initialized with the useState method.
+The App component passes the state down to the SearchBar and ProductsGridContainer as props. This can be seen in the second and third pictures below. 
+
+![State1](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/state1.png)
+![State2](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/state2.png)
+
+Notice how ProductsGridContainer performs filtering on the product data based on the application data. 
+Basically, React recommends holding minimal state and computing other information based on the state on-the-fly.
+This implementation follows this best practice recommendation by React documentation. Lastly, the filtered data is passed down to the table which is show in the last picture. 
+
+![State3](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/state3.png)
+![State4](https://github.com/samniem/products-bazaar-concept/blob/main/implementation/state4.png)
+
+
 
 ## Available Scripts
 
