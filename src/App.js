@@ -1,7 +1,7 @@
 import './App.css';
 import { ProductsHeader } from './components/productsHeader'
 import { SearchBar } from './components/searchBar'
-import { ProductsGridContainer } from './components/ProductsGridContainer';
+import { ProductsGridContainer } from './components/productsGridContainer';
 
 const products = [
   {category: "Electronics", name: "Air Pod", price: "$299", stock: "20"},
